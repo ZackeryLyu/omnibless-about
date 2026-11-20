@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0c0a08" />
+  <title>漫天神佛都为你</title>
+  <style>
+    :root {
+      color: #f4efe6;
+      background: #0c0a08;
+      --ink: #f4efe6;
+      --muted: #b3a394;
+      --line: rgba(244, 239, 230, 0.14);
+      --lamp: #e7b15a;
+      --panel: #221c16;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: #0c0a08; color: var(--ink); }
+    body {
+      font-family: "Songti SC", "STSongti-SC", "Noto Serif SC", serif;
+      line-height: 1.7;
+    }
+    html[lang="en"],
+    html[lang="es"],
+    html[lang="pt-BR"],
+    html[lang="fr"],
+    html[lang="de"],
+    html[lang="id"],
+    html[lang="tr"],
+    html[lang="vi"],
+    html[lang="tl"],
+    html[lang="ru"] {
+      font-family: "Iowan Old Style", Palatino, "Palatino Linotype", "Times New Roman", serif;
+    }
+    html[lang="ja"] { font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif CJK JP", serif; }
+    html[lang="ko"] { font-family: "Apple SD Gothic Neo", "Noto Serif CJK KR", serif; }
+    html[lang="th"] { font-family: Thonburi, "Noto Serif Thai", sans-serif; }
+    html[lang="hi"] { font-family: "Kohinoor Devanagari", "Noto Serif Devanagari", sans-serif; }
+    html[lang="bn"] { font-family: "Kohinoor Bangla", "Noto Sans Bengali", sans-serif; }
+    main { max-width: 38rem; margin: 0 auto; padding: 28px 22px 72px; }
+    nav { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+    button {
+      appearance: none;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      color: var(--ink);
+      font: inherit;
+      font-size: 0.92rem;
+      line-height: 1.3;
+      padding: 8px 12px;
+      border-radius: 999px;
+      cursor: pointer;
+    }
+    button[aria-pressed="true"] { border-color: var(--lamp); color: var(--lamp); }
+    article[hidden] { display: none; }
+    h1 { font-size: 1.85rem; font-weight: 500; line-height: 1.35; margin: 0 0 28px; }
+    h2 { font-size: 1rem; font-weight: 500; color: var(--lamp); margin: 28px 0 8px; }
+    p { margin: 0 0 12px; }
+    .noted { margin-top: 36px; color: var(--muted); font-size: 0.92rem; }
+    html[lang="zh-CN"] h1,
+    html[lang="zh-CN"] h2 { letter-spacing: 0.08em; }
+  </style>
+</head>
+<body>
+  <main>
+    <nav aria-label="Language"></nav>
+    <article id="zh" lang="zh-CN" data-title="漫天神佛都为你">
+      <h1>漫天神佛都为你</h1>
+      <h2>关于这一处</h2>
+      <p>这是你自己的安静处所，不代表任何寺庙或教会。一场只请一种传统。</p>
+      <p>桌上的香烛不改变那一句祝福。</p>
+      <p>祭祖的照片只留在这台设备上。撤下那一处，照片一起去掉。</p>
+      <p>那一句是事先写好的。它不说事情会怎样。</p>
+      <h2>界面语言</h2>
+      <p>换的是字。已经立好的祈福，仍按立下时的传统留着。</p>
+      <h2>隐私</h2>
+      <p>祭祖的照片只留在这台设备上，不会上传。</p>
+      <p>撤下一处，那一处的照片一起去掉。清空这台设备上的全部祈福，照片也一起去掉。</p>
+      <p>没有账号。祈福不会送到别处。</p>
+      <p class="noted">写于 2026-11-20</p>
+    </article>
+    <article id="en" lang="en" data-title="Blessings, for you" hidden>
+      <h1>Blessings, for you</h1>
+      <h2>About this place</h2>
+      <p>This is your own quiet place. It does not speak for a temple or a church. One tradition at a time.</p>
+      <p>What you put on the table does not change the sentence.</p>
+      <p>Ancestor photos stay on this device. Take the place down, and the photos go with it.</p>
+      <p>The sentence is written ahead. It does not say what will happen.</p>
+      <h2>Language</h2>
+      <p>This changes the words. Places already kept stay in the tradition they were made with.</p>
+      <p>This language only includes the traditions its speakers use.</p>
+      <h2>Privacy</h2>
+      <p>Ancestor photos stay on this device. They are not uploaded.</p>
+      <p>Take one blessing down, and its photos go with it. Clear every blessing on this device, and the photos go too.</p>
+      <p>There is no account. Blessings are not sent anywhere else.</p>
+      <p class="noted">Noted 2026-11-20</p>
+    </article>
+    <article id="es" lang="es" data-title="Bendiciones para ti" hidden>
+      <h1>Bendiciones para ti</h1>
+      <h2>Sobre este lugar</h2>
+      <p>Este es tu lugar quieto. No habla por un templo ni por una iglesia. Una tradición cada vez.</p>
+      <p>Lo que pones en la mesa no cambia la frase.</p>
+      <p>Las fotos de los antepasados se quedan en este aparato. Si quitas el lugar, se van con él.</p>
+      <p>La frase está escrita de antemano. No dice qué va a pasar.</p>
+      <h2>Idioma</h2>
+      <p>Esto cambia las palabras. Lo ya puesto sigue en la tradición con que se hizo.</p>
+      <p>Este idioma solo incluye las tradiciones de quienes lo hablan.</p>
+      <h2>Privacidad</h2>
+      <p>Las fotos de los antepasados se quedan en este aparato. No se suben.</p>
+      <p>Si quitas un lugar, sus fotos se van con él. Si vacías todas las bendiciones de este aparato, las fotos también se van.</p>
+      <p>No hay cuenta. Las bendiciones no se envían a ningún otro sitio.</p>
+      <p class="noted">Escrito el 2026-11-20</p>
+    </article>
+    <article id="hi" lang="hi" data-title="आशीष, तुम्हारे लिए" hidden>
+      <h1>आशीष, तुम्हारे लिए</h1>
+      <h2>इस स्थान के बारे में</h2>
+      <p>यह तुम्हारी अपनी शांत जगह है। किसी मंदिर या गिरजाघर की ओर से नहीं बोलती। एक समय में एक परंपरा।</p>
+      <p>मेज़ पर जो रखते हो, उससे वह वाक्य नहीं बदलता।</p>
+      <p>पूर्वजों की फ़ोटो इसी उपकरण पर रहती है। स्थान हटे, तो फ़ोटो भी जाती है।</p>
+      <p>वह वाक्य पहले से लिखा है। यह नहीं कहता कि आगे क्या होगा।</p>
+      <h2>भाषा</h2>
+      <p>इससे शब्द बदलते हैं। जो स्थान बन चुका है, वह अपनी परंपरा में रहता है।</p>
+      <p>इस भाषा में वही परंपराएँ हैं जिनके लोग इसे बोलते हैं।</p>
+      <h2>गोपनीयता</h2>
+      <p>पूर्वजों की फ़ोटो इसी उपकरण पर रहती है। वे अपलोड नहीं होतीं।</p>
+      <p>एक स्थान हटे, तो उसकी फ़ोटो भी जाती है। इस उपकरण की सारी आशीषें मिटाओ, तो फ़ोटो भी मिटती हैं।</p>
+      <p>कोई खाता नहीं है। आशीषें कहीं और नहीं भेजी जातीं।</p>
+      <p class="noted">2026-11-20 को लिखा</p>
+    </article>
+    <article id="bn" lang="bn" data-title="আশীর্বাদ, তোমার জন্য" hidden>
+      <h1>আশীর্বাদ, তোমার জন্য</h1>
+      <h2>এই জায়গা সম্পর্কে</h2>
+      <p>এটা তোমার নিজের শান্ত জায়গা। কোনো মন্দির বা গির্জার হয়ে বলে না। এক সময়ে একটি রীতি।</p>
+      <p>টেবিলে যা রাখো, তাতে সেই বাক্য বদলায় না।</p>
+      <p>পূর্বপুরুষের ছবি এই যন্ত্রেই থাকে। জায়গা নামালে ছবিও যায়।</p>
+      <p>সেই বাক্য আগে থেকে লেখা। সামনে কী হবে, তা বলে না।</p>
+      <h2>ভাষা</h2>
+      <p>এতে কথা বদলায়। যা আগে রাখা হয়েছে, তা তার নিজের রীতিতে থাকে।</p>
+      <p>এই ভাষায় শুধু সেই রীতিগুলো আছে, যাদের মানুষ এই ভাষা বলে।</p>
+      <h2>গোপনীয়তা</h2>
+      <p>পূর্বপুরুষের ছবি এই যন্ত্রেই থাকে। সেগুলো আপলোড হয় না।</p>
+      <p>একটি জায়গা নামালে তার ছবিও যায়। এই যন্ত্রের সব আশীর্বাদ মুছে ফেললে ছবিও যায়।</p>
+      <p>কোনো অ্যাকাউন্ট নেই। আশীর্বাদ অন্য কোথাও পাঠানো হয় না।</p>
+      <p class="noted">লেখা হয়েছে 2026-11-20</p>
+    </article>
+    <article id="pt" lang="pt-BR" data-title="Bênçãos para você" hidden>
+      <h1>Bênçãos para você</h1>
+      <h2>Sobre este lugar</h2>
+      <p>Este é o seu lugar quieto. Não fala por um templo nem por uma igreja. Uma tradição de cada vez.</p>
+      <p>O que você põe na mesa não muda a frase.</p>
+      <p>As fotos dos antepassados ficam neste aparelho. Se tirar o lugar, as fotos vão junto.</p>
+      <p>A frase está escrita de antemão. Ela não diz o que vai acontecer.</p>
+      <h2>Idioma</h2>
+      <p>Isto muda as palavras. O que já foi posto continua na tradição em que nasceu.</p>
+      <p>Este idioma só inclui as tradições de quem o fala.</p>
+      <h2>Privacidade</h2>
+      <p>As fotos dos antepassados ficam neste aparelho. Elas não são enviadas.</p>
+      <p>Se tirar um lugar, as fotos dele vão junto. Se esvaziar todas as bênçãos deste aparelho, as fotos também vão.</p>
+      <p>Não há conta. As bênçãos não são enviadas para outro lugar.</p>
+      <p class="noted">Escrito em 2026-11-20</p>
+    </article>
+    <article id="ru" lang="ru" data-title="Благословение тебе" hidden>
+      <h1>Благословение тебе</h1>
+      <h2>Об этом месте</h2>
+      <p>Это твоё тихое место. Оно не говорит от храма или церкви. Одна традиция за раз.</p>
+      <p>То, что на столе, не меняет фразу.</p>
+      <p>Фото предков остаются на этом устройстве. Снимешь место, и фото уйдут с ним.</p>
+      <p>Фраза написана заранее. Она не говорит, что будет дальше.</p>
+      <h2>Язык</h2>
+      <p>Меняются слова. То, что уже поставлено, остаётся в своей традиции.</p>
+      <p>В этом языке только традиции тех, кто на нём говорит.</p>
+      <h2>Конфиденциальность</h2>
+      <p>Фото предков остаются на этом устройстве. Они не отправляются.</p>
+      <p>Снимешь одно место, и его фото уйдут с ним. Очистишь все благословения на этом устройстве, и фото тоже уйдут.</p>
+      <p>Учётной записи нет. Благословения никуда не отправляются.</p>
+      <p class="noted">Записано 2026-11-20</p>
+    </article>
+    <article id="fr" lang="fr" data-title="Des bénédictions pour toi" hidden>
+      <h1>Des bénédictions pour toi</h1>
+      <h2>À propos de ce lieu</h2>
+      <p>C'est ton lieu calme. Il ne parle pas au nom d'un temple ni d'une église. Une tradition à la fois.</p>
+      <p>Ce que tu mets sur la table ne change pas la phrase.</p>
+      <p>Les photos des ancêtres restent sur cet appareil. Si tu retires le lieu, les photos partent avec lui.</p>
+      <p>La phrase est écrite d'avance. Elle ne dit pas ce qui arrivera.</p>
+      <h2>Langue</h2>
+      <p>Cela change les mots. Ce qui est déjà posé reste dans la tradition où il est né.</p>
+      <p>Cette langue ne comprend que les traditions de ceux qui la parlent.</p>
+      <h2>Confidentialité</h2>
+      <p>Les photos des ancêtres restent sur cet appareil. Elles ne sont pas envoyées.</p>
+      <p>Si tu retires un lieu, ses photos partent avec lui. Si tu effaces toutes les bénédictions de cet appareil, les photos partent aussi.</p>
+      <p>Il n'y a pas de compte. Les bénédictions ne sont pas envoyées ailleurs.</p>
+      <p class="noted">Écrit le 2026-11-20</p>
+    </article>
+    <article id="id" lang="id" data-title="Berkat untukmu" hidden>
+      <h1>Berkat untukmu</h1>
+      <h2>Tentang tempat ini</h2>
+      <p>Ini tempat tenangmu sendiri. Ia tidak berbicara atas nama kuil atau gereja. Satu tradisi saja.</p>
+      <p>Yang ditaruh di meja tidak mengubah kalimat itu.</p>
+      <p>Foto leluhur tinggal di perangkat ini. Tempat diturunkan, fotonya ikut pergi.</p>
+      <p>Kalimat itu sudah ditulis sebelumnya. Ia tidak mengatakan apa yang akan terjadi.</p>
+      <h2>Bahasa</h2>
+      <p>Ini mengubah kata. Yang sudah berdiri tetap pada tradisinya.</p>
+      <p>Bahasa ini hanya memuat tradisi orang yang memakainya.</p>
+      <h2>Privasi</h2>
+      <p>Foto leluhur tinggal di perangkat ini. Foto tidak diunggah.</p>
+      <p>Satu tempat diturunkan, fotonya ikut pergi. Semua berkat di perangkat ini dihapus, fotonya ikut pergi.</p>
+      <p>Tidak ada akun. Berkat tidak dikirim ke tempat lain.</p>
+      <p class="noted">Ditulis 2026-11-20</p>
+    </article>
+    <article id="ja" lang="ja" data-title="あなたのための祈り" hidden>
+      <h1>あなたのための祈り</h1>
+      <h2>この場所について</h2>
+      <p>ここはあなた自身の静かな場所で、寺社や教会を代表しません。一つの場所に一つの伝統です。</p>
+      <p>台の上の供えは、あの一文を変えません。</p>
+      <p>家の人の写真はこの機器にだけ残ります。その場所を下ろすと、写真も一緒に消えます。</p>
+      <p>その一文は、あらかじめ書いてあります。この先どうなるかは言いません。</p>
+      <h2>ことば</h2>
+      <p>変わるのは文字です。すでに立てた祈りの伝統はそのままです。</p>
+      <p>このことばには、それを使う人の伝統だけを置いています。</p>
+      <h2>プライバシー</h2>
+      <p>家の人の写真はこの機器にだけ残ります。送信されません。</p>
+      <p>一つの場所を下ろすと、その写真も一緒に消えます。この機器の祈りをすべて消すと、写真も消えます。</p>
+      <p>アカウントはありません。祈りはどこにも送られません。</p>
+      <p class="noted">2026-11-20 に記す</p>
+    </article>
+    <article id="ko" lang="ko" data-title="너를 위한 축원" hidden>
+      <h1>너를 위한 축원</h1>
+      <h2>이 자리에 대하여</h2>
+      <p>여기는 당신만의 조용한 자리이며, 절이나 교회를 대표하지 않습니다. 한 자리에는 한 전통만 있습니다.</p>
+      <p>상 위의 공물은 그 한 문장을 바꾸지 않습니다.</p>
+      <p>집 사람의 사진은 이 기기에만 남습니다. 그 자리를 내리면 사진도 함께 사라집니다.</p>
+      <p>그 한 문장은 미리 적혀 있습니다. 앞으로 어떻게 될지는 말하지 않습니다.</p>
+      <h2>언어</h2>
+      <p>바뀌는 것은 말입니다. 이미 세운 축원은 그때의 전통 그대로 남습니다.</p>
+      <p>이 언어에는 그 말을 쓰는 사람들의 전통만 둡니다.</p>
+      <h2>개인정보</h2>
+      <p>집 사람의 사진은 이 기기에만 남습니다. 올리지 않습니다.</p>
+      <p>한 자리를 내리면 그 사진도 함께 사라집니다. 이 기기의 축원을 모두 지우면 사진도 사라집니다.</p>
+      <p>계정은 없습니다. 축원은 다른 곳으로 보내지 않습니다.</p>
+      <p class="noted">2026-11-20에 적음</p>
+    </article>
+    <article id="de" lang="de" data-title="Segen für dich" hidden>
+      <h1>Segen für dich</h1>
+      <h2>Über diesen Ort</h2>
+      <p>Dies ist dein stiller Ort. Er spricht nicht für einen Tempel oder eine Kirche. Eine Tradition auf einmal.</p>
+      <p>Was auf dem Tisch steht, ändert den Satz nicht.</p>
+      <p>Fotos der Vorfahren bleiben auf diesem Gerät. Nimmst du den Ort ab, gehen die Fotos mit.</p>
+      <p>Der Satz ist vorher geschrieben. Er sagt nicht, was geschieht.</p>
+      <h2>Sprache</h2>
+      <p>Das ändert die Worte. Was schon steht, bleibt in der Tradition, in der es entstand.</p>
+      <p>Diese Sprache enthält nur die Traditionen der Menschen, die sie sprechen.</p>
+      <h2>Datenschutz</h2>
+      <p>Fotos der Vorfahren bleiben auf diesem Gerät. Sie werden nicht hochgeladen.</p>
+      <p>Nimmst du einen Ort ab, gehen seine Fotos mit. Löschst du jeden Segen auf diesem Gerät, gehen die Fotos auch.</p>
+      <p>Es gibt kein Konto. Segen werden nicht weitergeschickt.</p>
+      <p class="noted">Geschrieben am 2026-11-20</p>
+    </article>
+    <article id="tr" lang="tr" data-title="Sana bir dilek" hidden>
+      <h1>Sana bir dilek</h1>
+      <h2>Bu yer hakkında</h2>
+      <p>Burası senin sessiz yerin. Bir tapınak ya da kilise adına konuşmaz. Bir gelenekte bir yer.</p>
+      <p>Masaya koyduğun, o cümleyi değiştirmez.</p>
+      <p>Ata fotoğrafları bu cihazda kalır. Yeri indirirsen fotoğraflar da gider.</p>
+      <p>Cümle önceden yazılmıştır. Bundan sonra ne olacağını söylemez.</p>
+      <h2>Dil</h2>
+      <p>Bu, sözleri değiştirir. Kurulmuş olan, kendi geleneğinde kalır.</p>
+      <p>Bu dil, yalnızca onu konuşanların geleneklerini içerir.</p>
+      <h2>Gizlilik</h2>
+      <p>Ata fotoğrafları bu cihazda kalır. Yüklenmezler.</p>
+      <p>Bir yeri indirirsen fotoğrafları da gider. Bu cihazdaki bütün dilekleri silersen fotoğraflar da gider.</p>
+      <p>Hesap yok. Dilekler başka bir yere gönderilmez.</p>
+      <p class="noted">2026-11-20 tarihinde yazıldı</p>
+    </article>
+    <article id="vi" lang="vi" data-title="Lời chúc cho bạn" hidden>
+      <h1>Lời chúc cho bạn</h1>
+      <h2>Về chỗ này</h2>
+      <p>Đây là chỗ yên của riêng bạn. Không nói thay chùa hay nhà thờ. Một lúc một truyền thống.</p>
+      <p>Thứ trên bàn không đổi câu chúc.</p>
+      <p>Ảnh tổ tiên chỉ ở trên máy này. Gỡ chỗ ấy, ảnh đi theo.</p>
+      <p>Câu ấy được viết sẵn. Nó không nói chuyện sẽ ra sao.</p>
+      <h2>Ngôn ngữ</h2>
+      <p>Đổi chữ. Chỗ đã lập vẫn giữ truyền thống lúc lập.</p>
+      <p>Ngôn ngữ này chỉ có những truyền thống của người nói nó.</p>
+      <h2>Riêng tư</h2>
+      <p>Ảnh tổ tiên chỉ ở trên máy này. Ảnh không được tải lên.</p>
+      <p>Gỡ một chỗ, ảnh của chỗ đó đi theo. Xóa mọi lời chúc trên máy này, ảnh cũng đi.</p>
+      <p>Không có tài khoản. Lời chúc không được gửi đi nơi khác.</p>
+      <p class="noted">Viết ngày 2026-11-20</p>
+    </article>
+    <article id="th" lang="th" data-title="คำอวยพรให้เธอ" hidden>
+      <h1>คำอวยพรให้เธอ</h1>
+      <h2>เกี่ยวกับที่นี่</h2>
+      <p>ที่นี่เป็นที่สงบของเธอเอง ไม่ได้พูดแทนวัดหรือโบสถ์ ครั้งละจารีตเดียว</p>
+      <p>ของบนโต๊ะไม่เปลี่ยนประโยคนั้น</p>
+      <p>รูปบรรพบุรุษอยู่เฉพาะในเครื่องนี้ เอาที่ลง รูปไปด้วย</p>
+      <p>ประโยคนั้นเขียนไว้ก่อนแล้ว ไม่ได้บอกว่าต่อไปจะเป็นอย่างไร</p>
+      <h2>ภาษา</h2>
+      <p>เปลี่ยนถ้อยคำ สิ่งที่ตั้งไว้แล้วคงอยู่ในจารีตเดิม</p>
+      <p>ภาษานี้มีเฉพาะจารีตของคนที่ใช้ภาษานี้</p>
+      <h2>ความเป็นส่วนตัว</h2>
+      <p>รูปบรรพบุรุษอยู่เฉพาะในเครื่องนี้ ไม่ได้อัปโหลด</p>
+      <p>เอาที่หนึ่งลง รูปของที่นั้นไปด้วย ล้างคำอวยพรทั้งหมดในเครื่องนี้ รูปก็ไปด้วย</p>
+      <p>ไม่มีบัญชี คำอวยพรไม่ได้ถูกส่งไปที่อื่น</p>
+      <p class="noted">เขียนเมื่อ 2026-11-20</p>
+    </article>
+    <article id="tl" lang="tl" data-title="Pagpapala para sa iyo" hidden>
+      <h1>Pagpapala para sa iyo</h1>
+      <h2>Tungkol sa lugar na ito</h2>
+      <p>Ito ang sarili mong tahimik na lugar. Hindi ito nagsasalita para sa templo o simbahan. Isang tradisyon sa isang pagkakataon.</p>
+      <p>Ang inilalagay sa mesa ay hindi nagbabago ng pangungusap.</p>
+      <p>Ang mga larawan ng ninuno ay nananatili sa aparatong ito. Ibaba ang lugar, kasama ang mga larawan.</p>
+      <p>Ang pangungusap ay nakasulat na. Hindi nito sinasabi kung ano ang mangyayari.</p>
+      <h2>Wika</h2>
+      <p>Nagbabago ang mga salita. Ang naitayo na ay nananatili sa tradisyon nito.</p>
+      <p>Ang wikang ito ay para lamang sa mga tradisyon ng mga nagsasalita nito.</p>
+      <h2>Pribado</h2>
+      <p>Ang mga larawan ng ninuno ay nananatili sa aparatong ito. Hindi sila ina-upload.</p>
+      <p>Ibaba ang isang lugar, kasama ang mga larawan nito. Burahin ang bawat pagpapala sa aparatong ito, kasama ang mga larawan.</p>
+      <p>Walang account. Hindi ipinapadala ang mga pagpapala sa iba.</p>
+      <p class="noted">Isinulat noong 2026-11-20</p>
+    </article>
+  </main>
+  <script>
+    const names = {
+      zh: "中文", en: "English", es: "Español", hi: "हिन्दी", bn: "বাংলা",
+      pt: "Português", ru: "Русский", fr: "Français", id: "Bahasa Indonesia",
+      ja: "日本語", ko: "한국어", de: "Deutsch", tr: "Türkçe", vi: "Tiếng Việt",
+      th: "ไทย", tl: "Tagalog"
+    };
+    const htmlLang = { zh: "zh-CN", pt: "pt-BR" };
+    const nav = document.querySelector("nav");
+    Object.keys(names).forEach((code) => {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.dataset.lang = code;
+      button.textContent = names[code];
+      button.addEventListener("click", () => show(code));
+      nav.appendChild(button);
+    });
+    function wanted() {
+      const query = new URLSearchParams(location.search).get("lang");
+      const hash = location.hash.replace("#", "");
+      const asked = query || hash;
+      if (names[asked]) return asked;
+      const navLang = (navigator.languages && navigator.languages[0] || navigator.language || "zh").toLowerCase();
+      if (navLang.startsWith("zh")) return "zh";
+      if (navLang.startsWith("pt")) return "pt";
+      if (navLang.startsWith("fil") || navLang.startsWith("tl")) return "tl";
+      const base = navLang.split("-")[0];
+      return names[base] ? base : "zh";
+    }
+    function show(code) {
+      document.querySelectorAll("article").forEach((article) => {
+        article.hidden = article.id !== code;
+      });
+      document.querySelectorAll("nav button").forEach((button) => {
+        button.setAttribute("aria-pressed", button.dataset.lang === code ? "true" : "false");
+      });
+      const article = document.getElementById(code);
+      document.documentElement.lang = htmlLang[code] || code;
+      document.title = article.dataset.title;
+      const next = "#" + code;
+      if (location.hash !== next) history.replaceState(null, "", next);
+    }
+    show(wanted());
+  </script>
+</body>
+</html>
